@@ -48,6 +48,7 @@ body {
     color: var(--ink);
     background: #fcfcff;
     overflow-x: hidden;
+    padding-top: 79px;
     line-height: 1.6
 }
 
@@ -95,8 +96,10 @@ button {
 }
 
 .site-header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 20;
     padding: 12px 0;
     background: rgba(252, 252, 255, .78);
@@ -1002,6 +1005,10 @@ button {
 }
 
 @media(max-width:650px) {
+    body {
+        padding-top: 65px
+    }
+
     .container {
         width: min(100% - 34px, 500px)
     }
